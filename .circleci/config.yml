@@ -17,4 +17,4 @@ jobs:
 workflows:
   test_api:
     jobs:
-      - test-graphql
+      - test
