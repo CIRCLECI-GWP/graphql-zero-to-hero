@@ -1,11 +1,11 @@
-version: '2.1'
+version: "2.1"
 orbs:
   node: circleci/node@5.0.2
 jobs:
   test:
     executor:
       name: node/default
-      tag: '13.14'
+      tag: "13.14"
     steps:
       - checkout
       - node/install-packages:
@@ -17,4 +17,4 @@ jobs:
 workflows:
   test_api:
     jobs:
-      - test
+      - test-graphql
